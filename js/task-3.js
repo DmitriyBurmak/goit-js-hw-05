@@ -6,12 +6,11 @@
 
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
 
-const sortByDescendingFriendCount = users => {
-  return users.toSorted(
+const sortByDescendingFriendCount = users =>
+  users.toSorted(
     (firstfriend, secondFriend) =>
       secondFriend.friends.length - firstfriend.friends.length
   );
-};
 
 console.log(
   sortByDescendingFriendCount([
